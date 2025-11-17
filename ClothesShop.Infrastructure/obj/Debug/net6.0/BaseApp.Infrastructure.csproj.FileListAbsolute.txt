@@ -1,0 +1,17 @@
+C:\Users\HP\Desktop\BaseApp\BaseApp.Infrastructure\obj\Debug\net6.0\BaseApp.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\BaseApp\BaseApp.Infrastructure\obj\Debug\net6.0\BaseApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\BaseApp\BaseApp.Infrastructure\obj\Debug\net6.0\BaseApp.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\BaseApp\BaseApp.Infrastructure\obj\Debug\net6.0\BaseApp.Infrastructure.AssemblyInfo.cs
+C:\Users\HP\Desktop\BaseApp\BaseApp.Infrastructure\obj\Debug\net6.0\BaseApp.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\BaseApp\BaseApp.Infrastructure\bin\Debug\net6.0\BaseApp.Infrastructure.deps.json
+C:\Users\HP\Desktop\BaseApp\BaseApp.Infrastructure\bin\Debug\net6.0\BaseApp.Infrastructure.dll
+C:\Users\HP\Desktop\BaseApp\BaseApp.Infrastructure\bin\Debug\net6.0\BaseApp.Infrastructure.pdb
+C:\Users\HP\Desktop\BaseApp\BaseApp.Infrastructure\bin\Debug\net6.0\BaseApp.Application.dll
+C:\Users\HP\Desktop\BaseApp\BaseApp.Infrastructure\bin\Debug\net6.0\BaseApp.Domain.dll
+C:\Users\HP\Desktop\BaseApp\BaseApp.Infrastructure\bin\Debug\net6.0\BaseApp.Application.pdb
+C:\Users\HP\Desktop\BaseApp\BaseApp.Infrastructure\bin\Debug\net6.0\BaseApp.Domain.pdb
+C:\Users\HP\Desktop\BaseApp\BaseApp.Infrastructure\obj\Debug\net6.0\BaseApp.Infrastructure.csproj.CopyComplete
+C:\Users\HP\Desktop\BaseApp\BaseApp.Infrastructure\obj\Debug\net6.0\BaseApp.Infrastructure.dll
+C:\Users\HP\Desktop\BaseApp\BaseApp.Infrastructure\obj\Debug\net6.0\refint\BaseApp.Infrastructure.dll
+C:\Users\HP\Desktop\BaseApp\BaseApp.Infrastructure\obj\Debug\net6.0\BaseApp.Infrastructure.pdb
+C:\Users\HP\Desktop\BaseApp\BaseApp.Infrastructure\obj\Debug\net6.0\ref\BaseApp.Infrastructure.dll

@@ -1,0 +1,15 @@
+C:\Users\HP\Desktop\BaseApp\BaseApp.Application\obj\Debug\net6.0\BaseApp.Application.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\BaseApp\BaseApp.Application\obj\Debug\net6.0\BaseApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\BaseApp\BaseApp.Application\obj\Debug\net6.0\BaseApp.Application.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\BaseApp\BaseApp.Application\obj\Debug\net6.0\BaseApp.Application.AssemblyInfo.cs
+C:\Users\HP\Desktop\BaseApp\BaseApp.Application\obj\Debug\net6.0\BaseApp.Application.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\BaseApp\BaseApp.Application\bin\Debug\net6.0\BaseApp.Application.deps.json
+C:\Users\HP\Desktop\BaseApp\BaseApp.Application\bin\Debug\net6.0\BaseApp.Application.dll
+C:\Users\HP\Desktop\BaseApp\BaseApp.Application\bin\Debug\net6.0\BaseApp.Application.pdb
+C:\Users\HP\Desktop\BaseApp\BaseApp.Application\bin\Debug\net6.0\BaseApp.Domain.dll
+C:\Users\HP\Desktop\BaseApp\BaseApp.Application\bin\Debug\net6.0\BaseApp.Domain.pdb
+C:\Users\HP\Desktop\BaseApp\BaseApp.Application\obj\Debug\net6.0\BaseApp.Application.csproj.CopyComplete
+C:\Users\HP\Desktop\BaseApp\BaseApp.Application\obj\Debug\net6.0\BaseApp.Application.dll
+C:\Users\HP\Desktop\BaseApp\BaseApp.Application\obj\Debug\net6.0\refint\BaseApp.Application.dll
+C:\Users\HP\Desktop\BaseApp\BaseApp.Application\obj\Debug\net6.0\BaseApp.Application.pdb
+C:\Users\HP\Desktop\BaseApp\BaseApp.Application\obj\Debug\net6.0\ref\BaseApp.Application.dll
