@@ -1,10 +1,11 @@
-﻿using System;
+﻿using ClothesShop.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaseApp.Domain.Entities
+namespace ClothesShopin.Entities
 {
     public class Promotion : BaseEntity
     {

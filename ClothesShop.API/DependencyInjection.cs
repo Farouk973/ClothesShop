@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
-using BaseApp.Infrastructure.Settings;
+using ClothesShop.Infrastructure.Settings;
 
-namespace BaseApp.API
+namespace ClothesShop.API
 {
     public static class DependencyInjection
     {

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaseApp.Application.Feature.ToDos.Commands.UpdateToDo
+namespace ClothesShop.Application.Feature.ToDos.Commands.UpdateToDo
 {
     public class UpdateTodoCommand : IRequest<bool>
     {

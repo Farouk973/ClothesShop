@@ -1,11 +1,12 @@
-﻿using System;
+﻿using ClothesShopin.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace BaseApp.Domain.Entities
+namespace ClothesShop.Domain.Entities
 {
     public class Product : BaseEntity
     {

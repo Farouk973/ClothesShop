@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Diagnostics;
-using BaseApp.Application.Common.Exceptions;
+using ClothesShop.Application.Common.Exceptions;
 
 public static class ExceptionMiddleware
 {

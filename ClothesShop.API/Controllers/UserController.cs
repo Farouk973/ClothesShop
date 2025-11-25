@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using BaseApp.Application.Feature.Users.Commands.CreateUser;
-using BaseApp.Application.Feature.Users.Queries.GetUserById;
-using BaseApp.Application.Feature.Users.Queries.GetUserList;
-using BaseApp.Application.Feature.Users.Commands.DeleteUser;
-using BaseApp.Application.Feature.Users.Commands.UpdateUser;
+using ClothesShop.Application.Feature.Users.Commands.CreateUser;
+using ClothesShop.Application.Feature.Users.Queries.GetUserById;
+using ClothesShop.Application.Feature.Users.Queries.GetUserList;
+using ClothesShop.Application.Feature.Users.Commands.DeleteUser;
+using ClothesShop.Application.Feature.Users.Commands.UpdateUser;
 
-namespace BaseApp.API.Controllers
+namespace ClothesShop.API.Controllers
 {
     public class UserController : ApiControllerBase
     {

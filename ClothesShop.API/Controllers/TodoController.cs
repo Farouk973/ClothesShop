@@ -1,11 +1,11 @@
 
-using BaseApp.Application.Feature.ToDos.Commands.CreateToDo;
-using BaseApp.Application.Feature.ToDos.Commands.DeleteToDo;
-using BaseApp.Application.Feature.ToDos.Commands.UpdateToDo;
-using BaseApp.Application.Feature.ToDos.Queries.GetByUserId;
+using ClothesShop.Application.Feature.ToDos.Commands.CreateToDo;
+using ClothesShop.Application.Feature.ToDos.Commands.DeleteToDo;
+using ClothesShop.Application.Feature.ToDos.Commands.UpdateToDo;
+using ClothesShop.Application.Feature.ToDos.Queries.GetByUserId;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BaseApp.API.Controllers;
+namespace ClothesShop.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]

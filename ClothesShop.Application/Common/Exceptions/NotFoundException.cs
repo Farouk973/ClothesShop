@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaseApp.Application.Common.Exceptions
+namespace ClothesShop.Application.Common.Exceptions
 {
     public class NotFoundException : Exception
     {

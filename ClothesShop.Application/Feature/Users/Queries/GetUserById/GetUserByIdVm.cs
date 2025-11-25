@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaseApp.Application.Feature.Users.Queries.GetUserById
+namespace ClothesShop.Application.Feature.Users.Queries.GetUserById
 {
     public class GetUserByIdVm
     {

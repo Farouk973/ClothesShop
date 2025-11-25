@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MediatR;
 
-namespace BaseApp.Application.Feature.ToDos.Commands.CreateToDo
+namespace ClothesShop.Application.Feature.ToDos.Commands.CreateToDo
 {
     public class CreateTodoCommand : IRequest<Guid>
     {

@@ -4,9 +4,9 @@ using AutoMapper;
 using FluentValidation;
 using System.Reflection;
 using MediatR.Pipeline; // for pipeline behaviors
-using BaseApp.Application.Common.Validation;
+using ClothesShop.Application.Common.Validation;
 
-namespace BaseApp.Application
+namespace ClothesShop.Application
 {
     public static class DependencyInjection
     {

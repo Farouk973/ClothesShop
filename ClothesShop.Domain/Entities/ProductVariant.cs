@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaseApp.Domain.Entities
+namespace ClothesShop.Domain.Entities
 {
     public class ProductVariant : BaseEntity
     {

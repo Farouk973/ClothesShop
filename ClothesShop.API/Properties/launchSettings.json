@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "BaseApp.API": {
+    "ClothesShop.API": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

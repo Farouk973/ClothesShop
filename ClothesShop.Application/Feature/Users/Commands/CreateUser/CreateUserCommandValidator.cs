@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FluentValidation;
-namespace BaseApp.Application.Feature.Users.Commands.CreateUser
+namespace ClothesShop.Application.Feature.Users.Commands.CreateUser
 {
     public class CreateUserCommandValidator : AbstractValidator<CreateUserCommand>
     {

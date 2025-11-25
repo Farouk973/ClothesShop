@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Mvc;
 using MediatR;  
-namespace BaseApp.API.Controllers
+namespace ClothesShop.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace BaseApp.API.Settings
+namespace ClothesShop.API.Settings
 {
     public static class SwaggerApplicationExtensions
     {

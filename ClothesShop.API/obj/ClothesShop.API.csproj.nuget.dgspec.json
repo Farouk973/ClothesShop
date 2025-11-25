@@ -268,14 +268,7 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {
-              "C:\\Users\\HP\\Desktop\\ClothesShop\\ClothesShop.Application\\ClothesShop.Application.csproj": {
-                "projectPath": "C:\\Users\\HP\\Desktop\\ClothesShop\\ClothesShop.Application\\ClothesShop.Application.csproj"
-              },
-              "C:\\Users\\HP\\Desktop\\ClothesShop\\ClothesShop.Domain\\ClothesShop.Domain.csproj": {
-                "projectPath": "C:\\Users\\HP\\Desktop\\ClothesShop\\ClothesShop.Domain\\ClothesShop.Domain.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -288,17 +281,37 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Http.Abstractions": {
-              "target": "Package",
-              "version": "[2.3.0, )"
-            },
             "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Options": {
               "target": "Package",
               "version": "[6.0.0, )"
             },
             "Microsoft.Extensions.Options.ConfigurationExtensions": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.27.0, )"
+            },
+            "SharpCompress": {
+              "target": "Package",
+              "version": "[0.30.1, )"
+            },
+            "Snappier": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [

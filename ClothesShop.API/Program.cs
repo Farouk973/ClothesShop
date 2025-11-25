@@ -1,8 +1,8 @@
-using BaseApp.API;
-using BaseApp.API.Settings;
-using BaseApp.Application;
-using BaseApp.Infrastructure;
-using BaseApp.Infrastructure.Settings; // for SwaggerServiceExtensions
+using ClothesShop.API;
+using ClothesShop.API.Settings;
+using ClothesShop.Application;
+using ClothesShop.Infrastructure;
+using ClothesShop.Infrastructure.Settings; // for SwaggerServiceExtensions
 
 var builder = WebApplication.CreateBuilder(args);
 

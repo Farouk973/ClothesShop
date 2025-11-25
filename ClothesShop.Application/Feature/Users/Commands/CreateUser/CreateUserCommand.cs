@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MediatR;
 
-namespace BaseApp.Application.Feature.Users.Commands.CreateUser
+namespace ClothesShop.Application.Feature.Users.Commands.CreateUser
 {
     public class CreateUserCommand : IRequest<Guid>
     {

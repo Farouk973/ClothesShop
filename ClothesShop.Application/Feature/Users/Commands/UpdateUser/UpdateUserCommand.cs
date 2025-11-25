@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaseApp.Application.Feature.Users.Commands.UpdateUser
+namespace ClothesShop.Application.Feature.Users.Commands.UpdateUser
 {
     public class UpdateUserCommand : IRequest
     {

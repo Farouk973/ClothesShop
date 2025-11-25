@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaseApp.Application.Feature.ToDos.Queries.GetByUserId
+namespace ClothesShop.Application.Feature.ToDos.Queries.GetByUserId
 {
     public class GetByUserIdQuery : IRequest<List<GetByUserIdVm>>
     {
