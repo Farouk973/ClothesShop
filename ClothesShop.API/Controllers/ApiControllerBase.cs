@@ -1,6 +1,5 @@
-﻿using Microsoft.AspNetCore.Hosting.Server;
+﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using MediatR;  
 namespace ClothesShop.API.Controllers
 {
     [ApiController]

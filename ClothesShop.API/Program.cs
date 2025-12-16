@@ -1,8 +1,6 @@
 using ClothesShop.API;
 using ClothesShop.API.Settings;
 using ClothesShop.Application;
-using ClothesShop.Infrastructure;
-using ClothesShop.Infrastructure.Settings; // for SwaggerServiceExtensions
 
 var builder = WebApplication.CreateBuilder(args);
 

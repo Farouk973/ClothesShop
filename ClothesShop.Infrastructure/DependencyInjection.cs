@@ -1,24 +1,41 @@
-﻿using ClothesShop.Infrastructure.Settings;
+﻿using ClothesShop.Application.Common.Interfaces;
+using ClothesShop.Infrastructure.Data;
+using ClothesShop.Infrastructure.Persistance;
+using ClothesShop.Infrastructure.Repositories;
+using ClothesShop.Infrastructure.Settings;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 
-namespace ClothesShop.Infrastructure
+
+public static class DependencyInjection
 {
-    public static class DependencyInjection
+    public static IServiceCollection ConfigureInfrastructureServices(
+        this IServiceCollection services,
+        IConfiguration configuration)
     {
-        public static IServiceCollection ConfigureInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
-        {
-            // MongoDB settings
-            services.Configure<MongoDbSettings>(configuration.GetSection("MongoDbSettings"));
-            services.AddSingleton<IMongoDbSettings>(sp =>
-                sp.GetRequiredService<IOptions<MongoDbSettings>>().Value);
+        // 1. MongoDB settings
+        services.Configure<MongoDbSettings>(configuration.GetSection("MongoDbSettings"));
 
-            // TODO: uncomment when repositories are implemented
-            // services.AddScoped<IUserRepository, UserRepository>();
-            // services.AddScoped<ITodoRepository, TodoRepository>();
+        // Bind MongoDbSettings to an interface to keep Clean Architecture purity
+        services.AddSingleton<IMongoDbSettings>(sp =>
+            sp.GetRequiredService<IOptions<MongoDbSettings>>().Value);
 
-            return services;
-        }
+        // 2. MongoDB context
+        services.AddSingleton<IMongoDbContext, MongoDbContext>();
+        services.AddScoped<IDatabaseSeeder, MongoDbSeeder>();
+
+        // 3. Generic repository
+        services.AddScoped(typeof(IRepository<>), typeof(MongoRepository<>));
+        services.AddScoped<ICategoryRepository, CategoryRepository>();
+        services.AddScoped<IProductRepository, ProductRepository>();
+        services.AddScoped<IProductVariantRepository, ProductVariantRepository>();
+        services.AddScoped<IImageRepository, ImageRepository>();
+        services.AddScoped<IVideoRepository, VideoRepository>();
+        services.AddScoped<IPromotionRepository, PromotionRepository>();
+        
+
+
+        return services;
     }
 }

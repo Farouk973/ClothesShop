@@ -1,15 +1,3 @@
-C:\Users\HP\Desktop\BaseApp\BaseApp.Domain\bin\Debug\net6.0\ClothesShop.Domain.deps.json
-C:\Users\HP\Desktop\BaseApp\BaseApp.Domain\bin\Debug\net6.0\ClothesShop.Domain.dll
-C:\Users\HP\Desktop\BaseApp\BaseApp.Domain\bin\Debug\net6.0\ClothesShop.Domain.pdb
-C:\Users\HP\Desktop\BaseApp\BaseApp.Domain\obj\Debug\net6.0\ClothesShop.Domain.csproj.AssemblyReference.cache
-C:\Users\HP\Desktop\BaseApp\BaseApp.Domain\obj\Debug\net6.0\ClothesShop.Domain.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\HP\Desktop\BaseApp\BaseApp.Domain\obj\Debug\net6.0\ClothesShop.Domain.AssemblyInfoInputs.cache
-C:\Users\HP\Desktop\BaseApp\BaseApp.Domain\obj\Debug\net6.0\ClothesShop.Domain.AssemblyInfo.cs
-C:\Users\HP\Desktop\BaseApp\BaseApp.Domain\obj\Debug\net6.0\ClothesShop.Domain.csproj.CoreCompileInputs.cache
-C:\Users\HP\Desktop\BaseApp\BaseApp.Domain\obj\Debug\net6.0\ClothesShop.Domain.dll
-C:\Users\HP\Desktop\BaseApp\BaseApp.Domain\obj\Debug\net6.0\refint\ClothesShop.Domain.dll
-C:\Users\HP\Desktop\BaseApp\BaseApp.Domain\obj\Debug\net6.0\ClothesShop.Domain.pdb
-C:\Users\HP\Desktop\BaseApp\BaseApp.Domain\obj\Debug\net6.0\ref\ClothesShop.Domain.dll
 C:\Users\HP\Desktop\ClothesShop\ClothesShop.Domain\bin\Debug\net6.0\ClothesShop.Domain.deps.json
 C:\Users\HP\Desktop\ClothesShop\ClothesShop.Domain\bin\Debug\net6.0\ClothesShop.Domain.dll
 C:\Users\HP\Desktop\ClothesShop\ClothesShop.Domain\bin\Debug\net6.0\ClothesShop.Domain.pdb

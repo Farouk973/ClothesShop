@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ClothesShop.Domain.Entities
+﻿namespace ClothesShop.Domain.Entities
 {
     public class Category : BaseEntity
     {
         public string Name { get; set; } = null!;
         public string? Description { get; set; }
-
-        public List<Product> Products { get; set; } = new List<Product>();
+        public List<string> ImageIds { get; set; } = new(); // Optional category images
     }
 }

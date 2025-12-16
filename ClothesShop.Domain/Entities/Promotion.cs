@@ -1,19 +1,17 @@
 ﻿using ClothesShop.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ClothesShopin.Entities
+namespace ClothesShop.Entities
 {
     public class Promotion : BaseEntity
     {
-        public string Name { get; set; } = null!;
-        public string? Description { get; set; }
-        public decimal DiscountAmount { get; set; } // could be percentage or fixed amount
-        public bool IsPercentage { get; set; } = true;
-        public bool IsActive { get; set; } = true;
+        public string Title { get; set; } = null!;
+        public string Description { get; set; } = null!;
+
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
+
+        public List<string> ImageIds { get; set; } = new();
+        public List<string> VideoIds { get; set; } = new();
     }
 }
 

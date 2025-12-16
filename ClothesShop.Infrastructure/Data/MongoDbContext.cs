@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using MongoDB.Driver;
+﻿using ClothesShop.Application.Common.Interfaces;
 using ClothesShop.Infrastructure.Settings;
+using MongoDB.Driver;
 
 namespace ClothesShop.Infrastructure.Data
 {
-    public class MongoDbContext
+    public class MongoDbContext : IMongoDbContext
     {
         private readonly IMongoDatabase _database;
 
-        public MongoDbContext(MongoDbSettings settings)
+        public MongoDbContext(IMongoDbSettings settings)
         {
             var client = new MongoClient(settings.ConnectionString);
             _database = client.GetDatabase(settings.DatabaseName);

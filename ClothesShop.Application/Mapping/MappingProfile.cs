@@ -1,11 +1,35 @@
 ﻿using AutoMapper;
 using ClothesShop.Domain.Entities;
-using ClothesShop.Application.Feature.ToDos.Commands.CreateToDo;
-using ClothesShop.Application.Feature.Users.Commands.CreateUser;
-using ClothesShop.Application.Feature.ToDos.Queries.GetByUserId;
-using ClothesShop.Application.Feature.ToDos.Commands.UpdateToDo;
-using ClothesShop.Application.Feature.Users.Queries.GetUserById;
-using ClothesShop.Application.Feature.Users.Queries.GetUserList;
+
+/* Categories */
+using ClothesShop.Application.Features.Categories.Commands.CreateCategory;
+using ClothesShop.Application.Features.Categories.Commands.UpdateCategory;
+using ClothesShop.Application.Features.Categories.Queries.GetAllCategories;
+using ClothesShop.Application.Features.Categories.Queries.GetCategoryById;
+
+/* Products */
+using ClothesShop.Application.Features.Products.Commands.CreateProduct;
+using ClothesShop.Application.Features.Products.Commands.UpdateProduct;
+using ClothesShop.Application.Features.Products.Queries.GetProductById;
+using ClothesShop.Application.Features.Products.Queries.GetProductsByCategory;
+using ClothesShop.Application.Features.Products.Queries.GetProductsForFrontOffice;
+
+/* Product Variants */
+using ClothesShop.Application.Features.ProductVariants.Commands.CreateProductVariant;
+using ClothesShop.Application.Features.ProductVariants.Commands.UpdateProductVariant;
+using ClothesShop.Application.Features.ProductVariants.Queries.GetVariantsByProduct;
+
+/* Videos */
+using ClothesShop.Application.Features.Videos.Commands.CreateVideo;
+using ClothesShop.Application.Features.Videos.Commands.UpdateVideo;
+using ClothesShop.Application.Features.Videos.Queries.GetVideoById;
+
+/* Promotions */
+using ClothesShop.Application.Features.Promotions.Commands.CreatePromotion;
+using ClothesShop.Application.Features.Promotions.Commands.UpdatePromotion;
+using ClothesShop.Application.Features.Promotions.Queries.GetPromotionById;
+using ClothesShop.Application.Features.Promotions.Queries.GetActivePromotions;
+using ClothesShop.Entities;
 
 namespace ClothesShop.Application.Common.Mappings;
 
@@ -13,15 +37,53 @@ public class MappingProfile : Profile
 {
     public MappingProfile()
     {
-        //// User mapping
-        //CreateMap<CreateUserCommand, User>().ReverseMap();
-        //CreateMap<User, GetUserByIdVm>().ReverseMap();
-        //CreateMap<User, GetUserListVm>().ReverseMap();
-        ////TODO mapping
-        //CreateMap<CreateTodoCommand, TodoItem>().ReverseMap();
-        //CreateMap<TodoItem, GetByUserIdVm>().ReverseMap();
-        //CreateMap<TodoItem, UpdateTodoCommand>().ReverseMap();
-        
+        /* ==========================
+           CATEGORY
+        ========================== */
+        CreateMap<CreateCategoryCommand, Category>().ReverseMap();
+        CreateMap<UpdateCategoryCommand, Category>().ReverseMap();
+
+        CreateMap<Category, GetAllCategoriesVm>().ReverseMap();
+        CreateMap<Category, GetCategoryByIdVm>().ReverseMap();
+
+
+        /* ==========================
+           PRODUCT
+        ========================== */
+        CreateMap<CreateProductCommand, Product>().ReverseMap();
+        CreateMap<UpdateProductCommand, Product>().ReverseMap();
+
+        CreateMap<Product, GetProductByIdVm>().ReverseMap();
+        CreateMap<Product, GetProductsByCategoryVm>().ReverseMap();
+
+        CreateMap<Product, GetProductsForFrontOfficeVm>();
+
+
+        /* ==========================
+           PRODUCT VARIANT
+        ========================== */
+        CreateMap<CreateProductVariantCommand, ProductVariant>().ReverseMap();
+        CreateMap<UpdateProductVariantCommand, ProductVariant>().ReverseMap();
+
+        CreateMap<ProductVariant, GetVariantsByProductVm>().ReverseMap();
+
+
+        /* ==========================
+           VIDEO
+        ========================== */
+        CreateMap<CreateVideoCommand, Video>().ReverseMap();
+        CreateMap<UpdateVideoCommand, Video>().ReverseMap();
+
+        CreateMap<Video, GetVideoByIdVm>().ReverseMap();
+
+
+        /* ==========================
+           PROMOTION
+        ========================== */
+        CreateMap<CreatePromotionCommand, Promotion>().ReverseMap();
+        CreateMap<UpdatePromotionCommand, Promotion>().ReverseMap();
+
+        CreateMap<Promotion, GetPromotionByIdVm>().ReverseMap();
+        CreateMap<Promotion, GetActivePromotionsVm>().ReverseMap();
     }
 }
-

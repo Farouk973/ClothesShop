@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ClothesShop.Domain.Entities
+﻿namespace ClothesShop.Domain.Entities
 {
     public class ProductVariant : BaseEntity
     {
-        public string Size { get; set; } = null!;
+        public string ProductId { get; set; } = null!;
         public string Color { get; set; } = null!;
-        public int AvailableStock { get; set; }
+        public string Size { get; set; } = null!;
+        public int Stock { get; set; }
 
-        public List<Image> Images { get; set; } = new List<Image>();
+        public List<string> ImageIds { get; set; } = new(); // Images per variant/color
     }
 }

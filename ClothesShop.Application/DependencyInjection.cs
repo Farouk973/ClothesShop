@@ -1,10 +1,8 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using MediatR;
-using AutoMapper;
+﻿using ClothesShop.Application.Common.Validation;
 using FluentValidation;
+using MediatR;
+using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
-using MediatR.Pipeline; // for pipeline behaviors
-using ClothesShop.Application.Common.Validation;
 
 namespace ClothesShop.Application
 {
