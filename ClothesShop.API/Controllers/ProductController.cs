@@ -6,6 +6,7 @@ using ClothesShop.Application.Features.Products.Commands.DeleteProduct;
 using ClothesShop.Application.Features.Products.Queries.GetProductById;
 using ClothesShop.Application.Features.Products.Queries.GetProductsByCategory;
 using ClothesShop.Application.Features.Products.Queries.GetProductsForFrontOffice;
+using ClothesShop.Application.Common.Models;
 
 namespace ClothesShop.API.Controllers;
 
@@ -22,8 +23,20 @@ public class ProductController : ControllerBase
 
     // FRONT OFFICE – product cards
     [HttpGet("front")]
-    public async Task<IActionResult> GetForFrontOffice()
-        => Ok(await _mediator.Send(new GetProductsForFrontOfficeQuery()));
+    public async Task<IActionResult> GetProductsForFront(
+     [FromQuery] int pageNumber = 1,
+     [FromQuery] int pageSize = 10)
+    {
+        var result = await _mediator.Send(
+            new GetProductsForFrontOfficeQuery(
+                new PaginationParams
+                {
+                    PageNumber = pageNumber,
+                    PageSize = pageSize
+                }));
+
+        return Ok(result);
+    }
 
     // FRONT OFFICE – products by category
     [HttpGet("category/{categoryId}")]

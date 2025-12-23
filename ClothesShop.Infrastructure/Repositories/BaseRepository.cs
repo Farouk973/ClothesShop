@@ -43,6 +43,11 @@ namespace ClothesShop.Infrastructure.Repositories
         {
             await _collection.DeleteOneAsync(Builders<T>.Filter.Eq("Id", id));
         }
+
+        public Task<(List<T> Items, int TotalCount)> GetPagedAsync(Expression<Func<T, bool>> filter, int skip, int take)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }

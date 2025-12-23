@@ -51,5 +51,21 @@ namespace ClothesShop.Infrastructure.Repositories
         {
             return await _collection.Find(Builders<T>.Filter.Eq("Reference", reference)).FirstOrDefaultAsync();
         }
+        public async Task<(List<T> Items, int TotalCount)> GetPagedAsync(
+    Expression<Func<T, bool>> filter,
+    int skip,
+    int take)
+        {
+            var totalCount = await _collection.CountDocumentsAsync(filter);
+
+            var items = await _collection
+                .Find(filter)
+                .Skip(skip)
+                .Limit(take)
+                .ToListAsync();
+
+            return (items, (int)totalCount);
+        }
+
     }
 }

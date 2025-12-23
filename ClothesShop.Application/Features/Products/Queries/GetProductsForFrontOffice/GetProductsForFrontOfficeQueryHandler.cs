@@ -1,12 +1,13 @@
 ﻿using AutoMapper;
-using ClothesShop.Application.Common.Interfaces;
-using ClothesShop.Domain.Entities;
 using MediatR;
+using ClothesShop.Application.Common.Interfaces;
+using ClothesShop.Application.Common.Models;
+using ClothesShop.Domain.Entities;
 
 namespace ClothesShop.Application.Features.Products.Queries.GetProductsForFrontOffice;
 
 public class GetProductsForFrontOfficeQueryHandler
-    : IRequestHandler<GetProductsForFrontOfficeQuery, List<GetProductsForFrontOfficeVm>>
+    : IRequestHandler<GetProductsForFrontOfficeQuery, PaginatedResult<GetProductsForFrontOfficeVm>>
 {
     private readonly IRepository<Product> _repository;
     private readonly IMapper _mapper;
@@ -19,13 +20,21 @@ public class GetProductsForFrontOfficeQueryHandler
         _mapper = mapper;
     }
 
-    public async Task<List<GetProductsForFrontOfficeVm>> Handle(
+    public async Task<PaginatedResult<GetProductsForFrontOfficeVm>> Handle(
         GetProductsForFrontOfficeQuery request,
         CancellationToken cancellationToken)
     {
-        var products = await _repository.FindAsync(
-            x => x.InStock || x.ComingSoon);
+        var (items, totalCount) = await _repository.GetPagedAsync(
+            _ => true,
+            request.Pagination.Skip,
+            request.Pagination.PageSize);
 
-        return _mapper.Map<List<GetProductsForFrontOfficeVm>>(products);
+        return new PaginatedResult<GetProductsForFrontOfficeVm>
+        {
+            Items = _mapper.Map<List<GetProductsForFrontOfficeVm>>(items),
+            PageNumber = request.Pagination.PageNumber,
+            PageSize = request.Pagination.PageSize,
+            TotalCount = totalCount
+        };
     }
 }

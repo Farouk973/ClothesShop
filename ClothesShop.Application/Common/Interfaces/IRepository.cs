@@ -12,6 +12,10 @@ namespace ClothesShop.Application.Common.Interfaces
         Task AddAsync(T entity);
         Task UpdateAsync(string id, T entity);
         Task DeleteAsync(string id);
+        Task<(List<T> Items, int TotalCount)> GetPagedAsync(
+    Expression<Func<T, bool>> filter,
+    int skip,
+    int take);
     }
     public interface ICategoryRepository : IRepository<Category> { }
     public interface IProductRepository : IRepository<Product> { }
@@ -19,4 +23,5 @@ namespace ClothesShop.Application.Common.Interfaces
     public interface IImageRepository : IRepository<Image> { }
     public interface IVideoRepository : IRepository<Video> { }
     public interface IPromotionRepository : IRepository<Promotion> { }
+
 }
